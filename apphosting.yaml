@@ -1,0 +1,15 @@
+# Settings to manage and configure a Firebase App Hosting backend.
+# https://firebase.google.com/docs/app-hosting/configure
+runConfig:
+  # Increase this value to automatically spin up more instances in response to 
+  # increased traffic.
+  maxInstances: 1
+  # Set the memory to 2GiB to handle larger builds and complex server-side logic.
+  memoryMiB: 2048
+  # Specify the Node.js version to ensure a consistent build environment.
+  nodeVersion: 18
+env:
+  - variable: NODE_ENV
+    value: production
+  - variable: PORT
+    value: '8080'
